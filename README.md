@@ -8,7 +8,7 @@ I18n module for toa.
 
 ## [toa](https://github.com/toajs/toa)
 
-## Wrapped (i18n-node)[https://github.com/mashpie/i18n-node] v0.5.0
+## Wrapped [i18n-node](https://github.com/mashpie/i18n-node) v0.5.0
 
 ## Demo
 
@@ -43,7 +43,7 @@ var toaI18n = require('toa-i18n');
 ### toaI18n(app, options)
 
 It will add `__`, `__n`, `getLocale`, `setLocale`, `getCatalog` method to `context`, And `locale` getter to `context`.
-`options` is the same as (i18n-node)[https://github.com/mashpie/i18n-node].
+`options` is the same as [i18n-node](https://github.com/mashpie/i18n-node).
 
 ## Licences
 (The MIT License)
