@@ -1,11 +1,9 @@
-'use strict';
-// **Github:** https://github.com/toajs/toa-router
+'use strict'
+// **Github:** https://github.com/toajs/toa-i18n
 //
 // **License:** MIT
 
-/*global describe, it, before, after, beforeEach, afterEach*/
-
-var assert = require('assert');
-var request = require('supertest');
-var Toa = require('toa');
-var toaI18n = require('../');
+// var assert = require('assert')
+// var request = require('supertest')
+// var Toa = require('toa')
+// var toaI18n = require('../')

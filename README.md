@@ -14,19 +14,19 @@ I18n module for toa.
 
 ```js
 
-var toa = require('toa');
-var toaI18n = require('toa-i18n');
+var toa = require('toa')
+var toaI18n = require('toa-i18n')
 
-var app = toa(function(Thunk) {
-  this.body = this.__('Hello');
+var app = toa(function() {
+  this.body = this.__('Hello')
 });
 
 toaI18n(app, {
   cookie: 'lang',
   locales:['zh', 'en'],
   directory: './examples/locales'
-});
-app.listen(3000);
+})
+app.listen(3000)
 ```
 
 ## Installation
@@ -38,7 +38,7 @@ npm install toa-i18n
 ## API
 
 ```js
-var toaI18n = require('toa-i18n');
+var toaI18n = require('toa-i18n')
 ```
 ### toaI18n(app, options)
 
