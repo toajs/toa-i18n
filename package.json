@@ -4,14 +4,14 @@
   "authors": [
     "Yan Qing <admin@zensh.com>"
   ],
-  "version": "0.3.0",
+  "version": "0.4.0",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git@github.com:toajs/toa-i18n.git"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4.5.0"
   },
   "homepage": "https://github.com/toajs/toa-i18n",
   "keywords": [
@@ -20,16 +20,16 @@
     "i18n"
   ],
   "dependencies": {
-    "i18n": "~0.6.0"
+    "i18n": "~0.8.3"
   },
   "devDependencies": {
-    "mocha": "^2.4.5",
-    "supertest": "^1.1.0",
-    "standard": "^5.4.1",
-    "toa": "^1.4.0"
+    "standard": "^10.0.2",
+    "supertest": "^3.0.0",
+    "tman": "^1.6.9",
+    "toa": "^2.6.8"
   },
   "scripts": {
-    "test": "standard && mocha"
+    "test": "standard && tman"
   },
   "files": [
     "index.js",

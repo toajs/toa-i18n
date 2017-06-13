@@ -3,10 +3,11 @@
 //
 // **License:** MIT
 
-var toa = require('toa')
-var toaI18n = require('../index')
+const Toa = require('toa')
+const toaI18n = require('../index')
 
-var app = toa(function () {
+const app = new Toa()
+app.use(function () {
   this.body = this.__('Hello')
 })
 

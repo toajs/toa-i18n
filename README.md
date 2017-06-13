@@ -1,10 +1,10 @@
-toa-i18n
-====
+# toa-i18n
+
 I18n module for toa.
 
 [![NPM version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
-[![Talk topic][talk-image]][talk-url]
+[![Downloads][downloads-image]][downloads-url]
 
 ## [toa](https://github.com/toajs/toa)
 
@@ -14,10 +14,11 @@ I18n module for toa.
 
 ```js
 
-var toa = require('toa')
-var toaI18n = require('toa-i18n')
+const Toa = require('toa')
+const toaI18n = require('toa-i18n')
 
-var app = toa(function() {
+const app = new Toa()
+app.use(function() {
   this.body = this.__('Hello')
 });
 
@@ -38,14 +39,16 @@ npm install toa-i18n
 ## API
 
 ```js
-var toaI18n = require('toa-i18n')
+const toaI18n = require('toa-i18n')
 ```
+
 ### toaI18n(app, options)
 
 It will add `__`, `__n`, `getLocale`, `setLocale`, `getCatalog` method to `context`, And `locale` getter to `context`.
 `options` is the same as [i18n-node](https://github.com/mashpie/i18n-node).
 
 ## Licences
+
 (The MIT License)
 
 [npm-url]: https://npmjs.org/package/toa-i18n
@@ -54,5 +57,5 @@ It will add `__`, `__n`, `getLocale`, `setLocale`, `getCatalog` method to `conte
 [travis-url]: https://travis-ci.org/toajs/toa-i18n
 [travis-image]: http://img.shields.io/travis/toajs/toa-i18n.svg
 
-[talk-url]: https://guest.talk.ai/rooms/a6a9331024
-[talk-image]: https://img.shields.io/talk/t/a6a9331024.svg
+[downloads-url]: https://npmjs.org/package/toa-i18n
+[downloads-image]: http://img.shields.io/npm/dm/toa-i18n.svg?style=flat-square
